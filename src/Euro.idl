@@ -1,0 +1,11 @@
+module convertisseur {
+    interface Euro {
+        attribute string devise;
+        attribute double taux;
+
+        double toEuro(in double devise);
+        double toDevise(in double euro);
+        void setTaux(in double _taux);
+        void setDevise(in string _devise);
+    };
+};
